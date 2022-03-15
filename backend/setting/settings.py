@@ -100,7 +100,7 @@ if USE_S3:
     AWS_ACCESS_KEY_ID =  "minio"
     AWS_SECRET_ACCESS_KEY = "minio123"
 
-    AWS_STORAGE_BUCKET_NAME = "minio-bucket"
+    AWS_STORAGE_BUCKET_NAME = "example"
     AWS_S3_ENDPOINT_URL = "http://localhost:9000"
 
     AWS_DEFAULT_ACL = None
