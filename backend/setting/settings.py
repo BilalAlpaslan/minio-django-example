@@ -108,12 +108,12 @@ if USE_S3:
 
     # s3 static settings
     STATIC_LOCATION = 'static'
-    # STATIC_URL = f'{AWS_S3_ENDPOINT_URL}/{STATIC_LOCATION}/'
+    STATIC_URL = f'{AWS_S3_ENDPOINT_URL}/{STATIC_LOCATION}/'
     STATICFILES_STORAGE = 'setting.storage.StaticStorage'
 
     # s3 public media settings
     PUBLIC_MEDIA_LOCATION = 'media'
-    # MEDIA_URL = f'{AWS_S3_ENDPOINT_URL}/{PUBLIC_MEDIA_LOCATION}/'
+    MEDIA_URL = f'{AWS_S3_ENDPOINT_URL}/{PUBLIC_MEDIA_LOCATION}/'
     DEFAULT_FILE_STORAGE = 'setting.storage.PublicMediaStorage'
 
     # s3 private media settings
