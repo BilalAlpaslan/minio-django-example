@@ -1,0 +1,25 @@
+version: "3.4"
+
+services:
+
+    backend:
+        build:
+            context: ./backend/
+            dockerfile: ./Dockerfile
+        container_name: backend
+        ports:
+            - 8000:80
+
+    minio:
+        image: quay.io/minio/minio
+        container_name: minio
+        ports:
+            - 9000:9000
+            - 9001:9001
+            - 40503:40503
+        environment:
+            MINIO_ACCESS_KEY: minio
+            MINIO_SECRET_KEY: minio123
+        command: server /data
+        volumes:
+            - ./minio:/data

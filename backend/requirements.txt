@@ -1,0 +1,9 @@
+django==3.2.10
+django-cors-headers==3.8.0
+django-filter==2.4.0
+djangorestframework==3.12.4
+requests==2.26.0
+django-rest-knox
+psycopg2-binary
+python-dotenv
+pillow
