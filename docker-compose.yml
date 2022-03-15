@@ -1,7 +1,6 @@
 version: "3.4"
 
 services:
-
     backend:
         build:
             context: ./backend/
@@ -20,6 +19,8 @@ services:
         environment:
             MINIO_ACCESS_KEY: minio
             MINIO_SECRET_KEY: minio123
-        command: server /data
+            MINIO_ROOT_USER: minio
+            MINIO_ROOT_PASSWORD: minio123
+        command: server --console-address :9001 /data
         volumes:
             - ./minio:/data
