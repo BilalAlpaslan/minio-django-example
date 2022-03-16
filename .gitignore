@@ -160,3 +160,5 @@ yarn-error.log
 
 components
 minio/
+backend/db.sqlite3
+pycache/
